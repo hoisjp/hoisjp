@@ -1,5 +1,5 @@
 # Intro
-Azure には、Bicep （カタカナ読み方は "バイセップ"）という Infrastructure as Code (IaC) の DSL があります。ARM テンプレートの後継として登場してきました。2021/06 時点では v0.4 プレビュー版です。どんどん機能が追加されているところですが、中心となる機能群はすでに揃っていて、充分使い始めることができるレベルかと思います。
+Azure には、Bicep （カタカナ読み方は "バイセップ"、日本語訳は "上腕二頭筋"、ARM に対して・・・という由来だと思われます）という Infrastructure as Code (IaC) の DSL があります。ARM テンプレートの後継として登場してきました。2021/06 時点では v0.4 プレビュー版です。どんどん機能が追加されているところですが、中心となる機能群はすでに揃っていて、充分使い始めることができるレベルかと思います。
 - [Azure Docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview)
 - [GitHub Repository](https://github.com/Azure/bicep)
 
@@ -212,4 +212,24 @@ https://github.com/Azure/bicep/discussions/1680
 az deployment group create --mode Complete -f ./empty.bicep -n ... -g ...
 ```
 
-# 次のステップへ、役に立つリンクまとめ
+# 次のステップへ、役に立つ Tips
+
+- ひととおりのテクニックを学ぶためには Microsoft Learn の Bicep ラーニングパスがおすすめです。  
+https://docs.microsoft.com/ja-jp/learn/paths/bicep-deploy/  
+（まだ英語版のみですが、じきに日本語版も提供されるでしょう。）
+- VS Code の拡張機能についているスニペット機能を使うと便利です。リソース名を一部タイプしたところで補完機能を使えば、VS Codeがリソースの必須入力部分だけを出力してくれるので、あとは必要な値を埋めていくだけです。  
+[Quickstart: Create Bicep files with Visual Studio Code](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code?tabs=CLI)  
+![add-snippet](https://docs.microsoft.com/ja-jp/azure/azure-resource-manager/bicep/media/quickstart-create-bicep-use-visual-studio-code/add-snippet.png)  
+（画像出典 公式docsより）
+- いろいろと組み立て始めると、サンプルコードが欲しくなります。Bicep のサンプルコードはリポジトリの以下に集約されています。まずはここに実現したいものがないか探してみるのもおすすめです。（かなり多くのケースがカバーされています）  
+https://github.com/Azure/bicep/tree/main/docs/examples
+  - 101: リソース単体ごとのサンプルコード
+  - 201: リソースを複数組み合わせた、よくある構成を集めたもの
+  - 301: より発展的で特定のユースケースをカバーするもの
+
+# Feedback welcome!
+ささいなことでも構いませんので フィードバックをいただけると とても喜びます。
+- GitHub リポジトリ - https://github.com/hoisjp/vscode-remote-try-bicep
+- Twitter - https://twitter.com/hoisjp
+
+Enjoy Bicep and Azure!

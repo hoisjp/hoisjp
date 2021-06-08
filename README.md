@@ -1,3 +1,4 @@
+- Public Outcome: [2021](https://github.com/hoisjp/hoisjp/issues/6)
 - Tweeting on https://twitter.com/hoisjp
 - Bloging in Japanese on https://qiita.com/hoisjp
 - Contact via LinkedIn: https://www.linkedin.com/in/hoisjp/

@@ -195,6 +195,7 @@ Bicep v0.3 から、以下のように、ARM Template の JSON ファイルを�
 ## GitHub Actions 実行
 あとは、プッシュするなり、プルリクエストするなり、トリガーに応じてワークフローが実行されます。
 ![GitHubActions-Result](./assets/Screenshot_GitHubActions-Result_20210608.png) 
+実行が完了したら、リソース定義が正しく Azure に反映されているか確認してみてください。
 
 ## おまけ - リソース全削除
 
